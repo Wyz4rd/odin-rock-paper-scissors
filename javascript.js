@@ -1,5 +1,8 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
-    let result = "Computer chose: ";
+    let result = "";
     let computerCoice = Math.ceil(Math.random() * 3);
     
     if (computerCoice === 1) {
@@ -16,3 +19,5 @@ function getHumanChoice() {
     return humanChoice
 }
 
+console.log(getComputerChoice())
+console.log(getHumanChoice())
